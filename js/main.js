@@ -100,6 +100,8 @@ document.addEventListener( 'DOMContentLoaded', function() {
             menuBtn.style.top = "1rem";
 
             showMenu = true;
+            document.body.style.height = "100%";
+            document.body.style.overflowY = "hidden";
         } else {
             hamburger.classList.remove('open');
             nav.classList.remove('open');
@@ -108,6 +110,8 @@ document.addEventListener( 'DOMContentLoaded', function() {
             menuBtn.style.top = "4rem";
 
             showMenu = false;
+            document.body.style.height = "auto";
+            document.body.style.overflowY = "auto";
         }
     }
 
